@@ -1,12 +1,22 @@
 
+class Personagens():
+    def falar(self):
+        print('Eu sou um personagem.')
 
+class Guerreiro(Personagens):
+    def falar(self):
+        print('Eu sou um guerreiro!')
 
+class Mago(Personagens):
+    def falar(self):
+        print('Eu sou um mago!')
 
-class Guerreiro():
-    pass
+class Arqueiro(Personagens):
+    def falar(self):
+        print('Eu sou um arqueiro!')
 
-class Mago():
-    pass
+#Criar os objetos
 
-class Arqueiro():
-    pass
+personagens = [Guerreiro(), Mago(), Arqueiro()]
+for p in personagens:
+    p.falar()
