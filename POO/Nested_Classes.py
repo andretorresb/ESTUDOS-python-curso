@@ -1,4 +1,4 @@
-class Computador:
+class Computador: #Class pai
     def __init__(self, modelo, gpu_nome, gpu_memoria, cpu_nome, cpu_cores, cpu_clock):
         self.modelo = modelo
         self.gpu = self.GPU(gpu_nome, gpu_memoria)
